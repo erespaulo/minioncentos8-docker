@@ -24,7 +24,7 @@ RUN rpm -qa | grep salt-
 
 # copy the minion configuration
 COPY ./minion.conf /etc/salt/minion.d/
-RUN echo "root  ALL=(ALL:ALL) NOPASSWD:ALL\nsudo_ibere ALL=(root:root) NOPASSWD: /usr/bin/salt-call" >/etc/sudoers
+RUN echo "root  ALL=(ALL:ALL) NOPASSWD:ALL\nsudo_usuario ALL=(root:root) NOPASSWD: /usr/bin/salt-call" >/etc/sudoers
 
  
 
